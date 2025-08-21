@@ -160,7 +160,7 @@
   <div class="product">
     <img src="Love Stand With 2 Letters.jpg" alt="Product">
     <h3 id="secondLastProductName">Love Stand With 2 Letters</h3>
-  <p>₹300</p>
+  <p>₹350</p>
    QTY:<input type="number" id="qtyE" value="1" min="1" style="width: 25px;">
   <input type="text" id="wordInput" placeholder="2 Letter" maxlength="20" style="width: 60px;">
   
@@ -170,7 +170,7 @@
 <div class="product">
   <img src="Initial Love Stand With 2 Letters.jpg" alt="Product">
   <h3 id="lastProductName">Initial Love Stand With 2 Letters</h3>
-  <p>₹300</p>
+  <p>₹350</p>
   QTY:<input type="number" id="qtyF" value="1" min="1" style="width: 25px;">
   <input type="text" id="ltrInput" placeholder="2 Letters" maxlength="2" style="width: 60px;" title="Enter 2 uppercase letters (A-Z)">
   <button class="btn" onclick="addCustomNamedProductToCart()">Add to Cart</button>
@@ -240,7 +240,7 @@
     document.getElementById('secondLastProductName').textContent = customName;
 
     // Add to cart
-    cart.push({ product: customName, price: 300, quantity: qty });
+    cart.push({ product: customName, price: 350, quantity: qty });
     updateCart();
     alert(`${customName} x${qty} added to cart!`);
   }
@@ -257,7 +257,7 @@
 
     const customName = `${baseName} (${word})`;
 
-    currentSingleProduct = { product: customName, price: 300, quantity: qty };
+    currentSingleProduct = { product: customName, price: 350, quantity: qty };
     togglePopup('singleOrderPopup');
   }
 
@@ -274,7 +274,7 @@
   const customName = `${baseName} (${letters})`;
   document.getElementById('lastProductName').textContent = customName;
 
-  cart.push({ product: customName, price: 300, quantity: qty });
+  cart.push({ product: customName, price: 350, quantity: qty });
   updateCart();
   alert(`${customName} x${qty} added to cart!`);
 }
@@ -290,7 +290,7 @@ function openCustomProductOrder() {
   }
 
   const customName = `${baseName} (${letters})`;
-  currentSingleProduct = { product: customName, price: 300, quantity: qty };
+  currentSingleProduct = { product: customName, price: 350, quantity: qty };
   togglePopup('singleOrderPopup');
 }
 
